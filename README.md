@@ -11,9 +11,9 @@ El proyecto se desarrolla en fases, siguiendo las directrices del archivo `AGENT
   - `data/` definiciones de modelos de datos
   - `gui/` implementación de la interfaz gráfica con customtkinter
   - `utils/` utilidades y helpers generales
-- `tests/` pruebas unitarias e integración
-- `config/` archivos de configuración
-- `docs/` documentación adicional
+  - `config/` parámetros de configuración por defecto
+  - `tests/` pruebas unitarias e integración
+  - `docs/` documentación adicional
 
 ## Instalación
 
@@ -26,6 +26,9 @@ El proyecto se desarrolla en fases, siguiendo las directrices del archivo `AGENT
    ```bash
    pytest
    ```
+
+La aplicación lee parámetros iniciales desde `config/settings.json` y utiliza un
+logger básico para mostrar mensajes en consola.
 
 ## Estado del proyecto
 
